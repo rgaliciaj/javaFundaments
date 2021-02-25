@@ -5,7 +5,7 @@
  */
 package fundaments;
 
-import java.util.Scanner;
+
 
 /**
  *
@@ -17,17 +17,12 @@ public class Fundaments {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Numero par o impar?\n");
+        String resultado = (1 > 2) ? "verdadero" : "false";
+        System.out.println("resultado = " + resultado);
         
-        System.out.print("Ingrese su numero= ");
-        int num = Integer.parseInt(scan.nextLine());
-        
-        if(num % 2 == 0){
-            System.out.println("ES NUMERO PAR");
-        }else{
-            System.out.println("ES NUMERO IMPAR");
-        }
+        int numero = 8;
+        resultado = (numero % 2 == 0) ? "numero par" : "numero impar";
+        System.out.println("resultado = " + resultado);
     }
     
 }
